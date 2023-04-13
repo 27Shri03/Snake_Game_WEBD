@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 50%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.start {
+    background-color: transparent;
+    border: none;
+    font-size: 80px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.start:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.vid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9) {
+    .vid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9) {
+    .vid {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.content li a {
+    font-weight: 500;
+
+}
+
+.board {
+    background-color: aqua;
+    border: 2px solid black;
+    width: 120vmin;
+    height: 92vmin;
+    opacity: 0.9;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    border-radius: 20px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+.snake {
+    background: linear-gradient(green, blue);
+    border: 0.25vmin solid white;
+    border-radius: 30%;
+}
+
+.head {
+    background-color: orange;
+    background: linear-gradient(yellow, red);
+    border: 2px solid black;
+    transform: scale(1.10);
+    border-radius: 9px;
+}
+
+.score {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+
+}
+
+.score p {
+    display: inline;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.score p:nth-of-type(2){
+    display: block;
+}
+
+
+.instruct {
+    position: absolute;
+    left: 3%;
+    top: 18%;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.play{
+    font-size: 20px;
+    border: solid white 2px;
+    border-radius: 30%;
+}
+.play:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.copy{
+    color: #fff;
+    position: absolute;
+    bottom: 6%;
+    right: 5%;
+}

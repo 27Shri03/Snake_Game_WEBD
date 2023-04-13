@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="snaak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@600&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio src="bg.mp3" id="bga"></audio>
+    <div class="hero">
+        <div class="instruct" id="ins">
+            <P> INSTRUCTIONS:-</P>
+            <ul>
+                <li>Control the Snake using arrow keys.</li>
+                <li>You can increase your score by eating the fruit.</li>
+                <li>Be careful! length of the snake and speed will increase with time.</li>
+            </ul>
+        </div>
+        <video autoplay loop muted playes-inline class="vid">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <img src="https://i.pinimg.com/originals/55/fc/fa/55fcfa196027aefc82e36f62a3196412.jpg" alt="Error"
+                width="50px" height="50px">
+            <ul class="content">
+                <li><button id="play" class="play">&#128264;</button></li>
+            </ul>
+        </nav>
+        <button class="start" id="btn">Start Game</button>
+        <div class="board" id="board"></div>
+        <div class="score">Score: <p id="score">0</p>
+            <p class="high" id="high">High score : 0</p> 
+        </div>
+        <p id="copy" class="copy">&#169; Shriram Bhardwaj</p>
+    </div>
+</body>
+<script src="func.js"></script>
+</html>
